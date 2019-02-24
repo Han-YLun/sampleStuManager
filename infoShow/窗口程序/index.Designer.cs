@@ -166,21 +166,21 @@
             // 信息录入ToolStripMenuItem1
             // 
             this.信息录入ToolStripMenuItem1.Name = "信息录入ToolStripMenuItem1";
-            this.信息录入ToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.信息录入ToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
             this.信息录入ToolStripMenuItem1.Text = "信息录入";
             this.信息录入ToolStripMenuItem1.Click += new System.EventHandler(this.信息录入ToolStripMenuItem1_Click);
             // 
             // 信息查看ToolStripMenuItem1
             // 
             this.信息查看ToolStripMenuItem1.Name = "信息查看ToolStripMenuItem1";
-            this.信息查看ToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.信息查看ToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
             this.信息查看ToolStripMenuItem1.Text = "信息查看";
             this.信息查看ToolStripMenuItem1.Click += new System.EventHandler(this.信息查看ToolStripMenuItem1_Click);
             // 
             // 信息搜索ToolStripMenuItem
             // 
             this.信息搜索ToolStripMenuItem.Name = "信息搜索ToolStripMenuItem";
-            this.信息搜索ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.信息搜索ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.信息搜索ToolStripMenuItem.Text = "信息搜索";
             this.信息搜索ToolStripMenuItem.Click += new System.EventHandler(this.信息搜索ToolStripMenuItem_Click);
             // 
@@ -211,14 +211,14 @@
             // 注销ToolStripMenuItem1
             // 
             this.注销ToolStripMenuItem1.Name = "注销ToolStripMenuItem1";
-            this.注销ToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.注销ToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
             this.注销ToolStripMenuItem1.Text = "注销";
             this.注销ToolStripMenuItem1.Click += new System.EventHandler(this.注销ToolStripMenuItem1_Click);
             // 
             // 退出ToolStripMenuItem1
             // 
             this.退出ToolStripMenuItem1.Name = "退出ToolStripMenuItem1";
-            this.退出ToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.退出ToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
             this.退出ToolStripMenuItem1.Text = "退出程序";
             this.退出ToolStripMenuItem1.Click += new System.EventHandler(this.退出ToolStripMenuItem1_Click);
             // 
@@ -307,6 +307,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "index";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "用户信息管理系统";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.index_FormClosing);
             this.Load += new System.EventHandler(this.index_Load);

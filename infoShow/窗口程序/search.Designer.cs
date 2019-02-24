@@ -410,7 +410,9 @@
             this.Controls.Add(this.pictureBox1);
             this.MaximizeBox = false;
             this.Name = "search";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.search_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.search_FormClosed);
             this.Load += new System.EventHandler(this.search_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

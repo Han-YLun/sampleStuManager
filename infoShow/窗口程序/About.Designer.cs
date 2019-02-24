@@ -51,6 +51,7 @@
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
             this.Name = "About";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "About";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.About_FormClosed);
             this.Load += new System.EventHandler(this.About_Load);

@@ -126,7 +126,8 @@ namespace infoShow.窗口程序
         private void infoShows_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Hide();
-            Common._index.ShowDialog();
+            Common.showIndex = 0;
+            Common._index.Show();
         }
     }
 }

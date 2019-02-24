@@ -121,8 +121,8 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Location = new System.Drawing.Point(500, 500);
             this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "学生信息管理系统";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.login_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);

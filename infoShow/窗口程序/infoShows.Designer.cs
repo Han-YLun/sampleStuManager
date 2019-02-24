@@ -398,6 +398,7 @@
             this.Controls.Add(this.pictureBox1);
             this.MaximizeBox = false;
             this.Name = "infoShows";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "infoShows";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.infoShows_FormClosed);
             this.Load += new System.EventHandler(this.infoShows_Load);

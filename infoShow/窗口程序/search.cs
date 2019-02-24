@@ -139,8 +139,13 @@ namespace infoShow.窗口程序
 
         private void search_FormClosing(object sender, FormClosingEventArgs e)
         {
+            
+        }
+
+        private void search_FormClosed(object sender, FormClosedEventArgs e)
+        {
             this.Hide();
-            Common._index.ShowDialog();
+            Common._index.Show();
         }
     }
 }

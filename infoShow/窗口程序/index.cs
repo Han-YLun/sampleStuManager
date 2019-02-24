@@ -53,31 +53,47 @@ namespace infoShow
         private void 信息录入ToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Common._iAdd.ShowDialog();
+            //如果页面被销毁,就新建对象
+            if(Common._iAdd.IsDisposed)
+                Common._iAdd = new infoAdd();
+            Common._iAdd.Show();
+
         }
 
         private void 信息查看ToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Common._iShows.ShowDialog();
+            //如果页面被销毁,就新建对象
+            if (Common._iShows.IsDisposed)
+                Common._iShows = new infoShows();
+            Common._iShows.Show();
         }
 
         private void 信息搜索ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Common._search.ShowDialog();
+            //如果页面被销毁,就新建对象
+            if (Common._search.IsDisposed)
+                Common._search = new search();
+            Common._search.Show();
         }
 
         private void 关于ToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Common._about.ShowDialog();
+            //如果页面被销毁,就新建对象
+            if (Common._about.IsDisposed)
+                Common._about = new About();
+            Common._about.Show();
         }
 
         private void 注销ToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Common._iLogin.ShowDialog();
+            //如果页面被销毁,就新建对象
+            if (Common._iLogin.IsDisposed)
+                Common._iLogin = new login();
+            Common._iLogin.Show();
         }
 
         private void index_FormClosing(object sender, FormClosingEventArgs e)
