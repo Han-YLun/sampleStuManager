@@ -20,13 +20,25 @@ namespace infoShow.窗口程序
         private void infoShows_Load(object sender, EventArgs e)
         {
             //获取所有的学生信息
-             Utils.getStudent();
+            Utils.getStudent();
             //将控件设置为不可编辑
             setWidget();
-            //默认显示第一条信息
-            showInfoIndex();
-            //设置上一个/下一个按钮的状态
-            setNextOrPre();
+
+            if (Common.stus.Count <= 0)
+            {
+                MessageBox.Show("您还未输入任何消息");
+                button2.Hide();
+                button3.Hide();
+            }
+            else
+            {
+                //默认显示第一条信息
+                showInfoIndex();
+                //设置上一个/下一个按钮的状态
+                setNextOrPre();
+                
+            }
+           
         }
 
 

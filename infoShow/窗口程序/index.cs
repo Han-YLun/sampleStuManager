@@ -98,15 +98,28 @@ namespace infoShow
 
         private void index_FormClosing(object sender, FormClosingEventArgs e)
         {
+
             if (Utils.exit() == 1)
                 e.Cancel = false;
             else
-                e.Cancel = true;//退出
+                e.Cancel = true;
         }
 
         private void 退出ToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            index_FormClosing(null, null);
+            if (Utils.exit() == 1) {
+                this.Hide();
+                //如果页面被销毁,就新建对象
+                if (Common._iLogin.IsDisposed)
+                    Common._iLogin = new login();
+                Common._iLogin.Show();
+            }
+            
+               
+        }
+
+        private void index_FormClosed(object sender, FormClosedEventArgs e)
+        {
         }
     }
 }

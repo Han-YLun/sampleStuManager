@@ -102,7 +102,7 @@ namespace infoShow.窗口程序
 
             if (!Utils.isID(textBox2.Text))
             {
-                MessageBox.Show("身份证号码格式错误,请重新输入");
+                MessageBox.Show("身份证号码格式错误,长度应为18位");
                 textBox2.Focus();
                 return;
             }

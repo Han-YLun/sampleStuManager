@@ -310,6 +310,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "用户信息管理系统";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.index_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.index_FormClosed);
             this.Load += new System.EventHandler(this.index_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

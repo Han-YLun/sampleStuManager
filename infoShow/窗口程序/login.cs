@@ -25,8 +25,8 @@ namespace infoShow
         {
             Utils.getUser();
             //将文本中的用户密码和信息清除掉
-            //Utils.ceEmpty(Common.infoPath);
-            Utils.ceEmpty(Common.loginPath);
+           // Utils.ceEmpty(Common.infoPath);
+            //Utils.ceEmpty(Common.loginPath);
 
         }
 
